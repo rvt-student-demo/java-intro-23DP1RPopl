@@ -9,18 +9,18 @@ public class App {
         // Create a tool for reading user input and name it scanner
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ievadit savu vardu");
+        System.err.println("Ievada pirmaja skaitla");
 
-        String vard = scanner.nextLine();
-        
-        System.out.println("Ievadit savu uzvard");
+        String input1 = scanner.nextLine();
 
-        String uzvard = scanner.nextLine();
-        
-        System.out.println("Ievadit savu gruppu");
-        
-        String grup = scanner.nextLine();
+        int result1 = Integer.valueOf(input1);
 
-        System.out.println(vard + " " + uzvard + " " + grup);
+        System.err.println("Ievada otraja skaitla");
+
+        String input2 = scanner.nextLine();
+
+        int result2 = Integer.valueOf(input2);
+
+        System.err.println(result1 * result2);
     }
 }
