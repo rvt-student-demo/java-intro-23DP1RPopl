@@ -3,7 +3,7 @@ package lv.rvt;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 
-public class Comments {
+public class App {
     public static void main(String[] args) {
         // Printing
         System.out.println("Text to print");
