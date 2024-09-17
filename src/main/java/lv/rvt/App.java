@@ -10,14 +10,21 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give speed:");
+        System.out.println("Give the first number:");
         int number = Integer.valueOf(scanner.nextLine());
+        System.out.println("Give the second number:");
+        int number2 = Integer.valueOf(scanner.nextLine());
         
-        
-        if (number > 120) {
-            System.out.println("Speeding ticket!");
+        if (number > number2) {
+            System.out.println("Greater number is: " + number );
         }
-
+        else if (number < number2) {
+            System.out.println("Greater number is: " + number2 );
+        }
+        else {
+            System.out.println("Greater number not" );
+        }
+        
        
 
 
