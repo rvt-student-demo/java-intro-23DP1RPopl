@@ -22,7 +22,7 @@ public class App
             System.out.println("Greater number is: " + number2 );
         }
         else {
-            System.out.println("Greater number not" );
+            System.out.println("The numbers are equal!" );
         }
         
        
