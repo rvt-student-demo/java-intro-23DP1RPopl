@@ -2,15 +2,27 @@ package lv.rvt;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.util.Scanner;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        // OnceUponATime
-        System.out.println("Once upon a time");
-        System.out.println("there was");
-        System.out.println("a program");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Give speed:");
+        int number = Integer.valueOf(scanner.nextLine());
+        
+        
+        if (number > 120) {
+            System.out.println("Speeding ticket!");
+        }
+
+       
+
+
+
+
 
     }
     
