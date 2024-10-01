@@ -7,20 +7,17 @@ import java.util.Scanner;
 
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("How many times? ");
-        int numberFromUser = Integer.valueOf(scanner.nextLine());
-        while (true) {
-            if (numberFromUser == 0){
-                break;
-            }
-            printText();
-            numberFromUser = numberFromUser - 1;
-        }
+        int number1 = Integer.valueOf(scanner.nextLine());
+        int number2 = Integer.valueOf(scanner.nextLine());
+        divisibleByThreeInRange(number1, number2);
     }
-    public static void printText() {
-     System.out.println("In a hole in the ground there lived a method");       
+    public static void  divisibleByThreeInRange(int beginning, int end) {
+     for (int i = beginning; i < end + 1; i++){
+        if (i % 3 == 0) {
+            System.out.println(i);
+        }
+     } 
     }
 }
