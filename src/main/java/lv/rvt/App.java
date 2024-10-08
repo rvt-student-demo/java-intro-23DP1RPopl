@@ -7,35 +7,43 @@ import java.util.Scanner;
 
 public class App 
 {
+    public static void printSpaces(int number){
+        for (int i = 0; i < number;i++){
+            System.out.print(" ");
+        }
+    }
     public static void printStars(int number) {
         for (int i = 0; i < number; i++){
             System.out.print("*");
         }
-        
+    }
+
+    public static void printTriangleTwo(int size){
+     for (int si = 1; si < size + 1 ; si++){
+        printSpaces(size - si);
+        printStars(si);
         System.out.println("");
-    }
-    public static void printSquare(int size) {
-        for (int i = 0; i < size; i++){
-            printStars(size);
-        }
-    }
-    public static void printRectangle(int width, int height){
-        for (int h = 0 ; h < height; h++){
-            printStars(width);
-            
-        }
-    }
-    public static void printTriangle(int size){
-        for (int i = 0 ; i < size ; i++){
-            printStars(i + 1);
-        }
-    }
+     } 
+ }
+ public static void christmasTree(int height){
+    for (int he = 1; he < height + 1 ; he++){
+        printSpaces(height - he);
+        printStars(he);
+        printStars(he-1);
+        System.out.println("");
+     } 
+     printSpaces(height - 2);
+     printStars(3);
+     System.out.println("");
+     printSpaces(height - 2);
+     printStars(3);
+     System.out.println("");
+     
+ }
     public static void main(String[] args) {
-        printStars(5);
-        printStars(3);
-        printStars(9);
-        printSquare(4);
-        printRectangle(17, 3);
-        printTriangle(4);
+        printTriangleTwo(4);
+        christmasTree(4);
+        christmasTree(10);
     }
+
 }
