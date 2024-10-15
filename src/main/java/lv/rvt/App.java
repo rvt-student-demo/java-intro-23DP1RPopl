@@ -2,26 +2,25 @@ package lv.rvt;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.*;
 
 
 public class App 
 {
     public static void main(String[] args) {
-        ArrayList<String> wordList = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         int a = 1;
         while(a == 1){
-            String vard = scanner.nextLine();
-            wordList.add(vard);
-            if (vard == ""){
+            int number = Integer.valueOf(scanner.nextLine());
+            numbers.add(number);
+            if (number == 0){
                 a = 0;
             }  
         }
-
+        int sum = numbers.get(1) + numbers.get(2);
     
-        System.out.println(wordList.get(2));
+        System.out.println(sum);
     }
 
 }
