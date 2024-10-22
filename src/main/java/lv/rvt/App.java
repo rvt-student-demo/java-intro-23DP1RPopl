@@ -14,13 +14,18 @@ public class App
         while(a == 1){
             int number = Integer.valueOf(scanner.nextLine());
             numbers.add(number);
-            if (number == 0){
+            if (number == -1){
                 a = 0;
             }  
         }
-        int sum = numbers.get(1) + numbers.get(2);
-    
-        System.out.println(sum);
+        System.out.print("From where? ");
+        int number1 = Integer.valueOf(scanner.nextLine());
+        System.out.print("To where? ");
+        int number2 = Integer.valueOf(scanner.nextLine());
+        for (int i = number1; i <= number2; i++){
+            int number = numbers.get(i);
+            System.out.println(number);
+        }
     }
 
 }
