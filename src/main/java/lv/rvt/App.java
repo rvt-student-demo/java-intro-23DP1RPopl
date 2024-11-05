@@ -9,16 +9,16 @@ public class App
 {      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        Animal animal1 = new Animal("cat");
-        Animal animal2 = new Animal("dog");
+        Integer num = 0;
+        Statistics statistics = new Statistics();
 
-        System.out.println(
-            animal1
-        );
-        System.out.println(
-            animal2
-        );
 
+        while (num != -1) {
+            num = Integer.valueOf(scanner.nextLine());
+            statistics.addNumber(num);
+        }
+        System.out.println("Sum: " + statistics.sum());
+        System.out.println("Sum of even numbers: " + statistics.sum2());
+        System.out.println("Sum of odd numbers: " + statistics.sum1());
     }
 }
