@@ -3,6 +3,7 @@ package lv.rvt;
 public class Person {
     private String name;
     private int age;
+    private String group;
 
     public Person(String initialName) {
         this.age = 0;
@@ -24,6 +25,15 @@ public class Person {
         if (this.age < 30) {
             this.age = this.age + 1;
         }
+    }
+    public int returnAge() {
+        return this.age;
+    }
+    public String getGroup() {
+        return this.group;
+    }
+    public void setGroup(String group){
+        this.group = group;
     }
 }
 

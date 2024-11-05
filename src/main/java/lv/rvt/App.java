@@ -9,27 +9,16 @@ public class App
 {      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        DecreasingCounter aba = new DecreasingCounter(2);
-        DecreasingCounter counter = new DecreasingCounter(100);
+        
+        Animal animal1 = new Animal("cat");
+        Animal animal2 = new Animal("dog");
 
-        aba.printValue();
+        System.out.println(
+            animal1
+        );
+        System.out.println(
+            animal2
+        );
 
-        aba.decrement();
-        aba.printValue();
-
-        aba.decrement();
-        aba.printValue();
-
-        aba.decrement();
-        aba.printValue();
-
-
-        counter.printValue();
-
-        counter.reset();
-        counter.printValue();
-
-        counter.decrement();
-        counter.printValue();
-        }
+    }
 }
