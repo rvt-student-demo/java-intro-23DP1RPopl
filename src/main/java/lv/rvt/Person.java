@@ -20,6 +20,10 @@ public class Person {
         antti.printPerson();
         martin.printPerson();
     }
-
+    public void growOlder() {
+        if (this.age < 30) {
+            this.age = this.age + 1;
+        }
+    }
 }
 

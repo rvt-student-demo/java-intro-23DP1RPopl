@@ -1,7 +1,7 @@
 package lv.rvt;
 
 public class Product {
-        
+
     private String name;
     private double price;
     private int quantity;
@@ -19,5 +19,6 @@ public class Product {
 
         banana.printProduct();
     }
+    
 
 }

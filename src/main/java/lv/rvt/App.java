@@ -9,8 +9,27 @@ public class App
 {      
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Product aba = new Product("ba", 2.4, 5);
+        DecreasingCounter aba = new DecreasingCounter(2);
+        DecreasingCounter counter = new DecreasingCounter(100);
 
-        aba.printProduct();
+        aba.printValue();
+
+        aba.decrement();
+        aba.printValue();
+
+        aba.decrement();
+        aba.printValue();
+
+        aba.decrement();
+        aba.printValue();
+
+
+        counter.printValue();
+
+        counter.reset();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
         }
 }
