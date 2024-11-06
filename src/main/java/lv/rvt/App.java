@@ -12,10 +12,10 @@ public class App
         Integer num = 0;
         Statistics statistics = new Statistics();
 
-
+        num = Integer.valueOf(scanner.nextLine());
         while (num != -1) {
-            num = Integer.valueOf(scanner.nextLine());
             statistics.addNumber(num);
+            num = Integer.valueOf(scanner.nextLine());
         }
         System.out.println("Sum: " + statistics.sum());
         System.out.println("Sum of even numbers: " + statistics.sum2());
