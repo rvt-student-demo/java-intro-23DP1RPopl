@@ -57,7 +57,9 @@ public class Person {
     public String getName() {
         return this.name;
     }
-
+    public void setAge(int newgroup){
+        this.age = newgroup;
+    }
     public int getAge() {
         return this.age;
     }

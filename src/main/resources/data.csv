@@ -1,4 +1,4 @@
 id, name, password
 1, root, 123
-user1 , person1
-user2 ,person2
+user1 , password1
+user2 , password2
