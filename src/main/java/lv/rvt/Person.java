@@ -7,10 +7,10 @@ public class Person {
     private int weight;
     private int height;
 
-    public Person(String initialName) {
-        this.age = 0;
-        this.weight = 0;
-        this.height = 0;
+    public Person(String initialName, Integer initialage, Integer initialweight, Integer initialheight ) {
+        this.age = initialage;
+        this.weight = initialweight;
+        this.height = initialheight;
         this.name = initialName;
     }
 
@@ -30,15 +30,6 @@ public class Person {
     }
     public void printPerson() {
         System.out.println(this.name + ", age " + this.age + " years");
-    }
-    public static void main(String[] args) {
-        Person ada = new Person("Ada");
-        Person antti = new Person("Antti");
-        Person martin = new Person("Martin");
-
-        ada.printPerson();
-        antti.printPerson();
-        martin.printPerson();
     }
     public void growOlder() {
         if (this.age < 30) {
