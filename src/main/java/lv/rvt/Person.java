@@ -54,5 +54,12 @@ public class Person {
     public void setGroup(String group){
         this.group = group;
     }
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
 }
 
