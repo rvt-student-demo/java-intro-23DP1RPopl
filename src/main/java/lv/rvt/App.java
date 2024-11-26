@@ -9,13 +9,26 @@ public class App
 {      
 
     public static void main(String[] args) {
-        Product tapeMeasure = new Product("Tape measure");
-        Product plaster = new Product("Plaster", "home improvement section");
-        Product tyre = new Product("Tyre", 5);
-    
-        System.out.println(tapeMeasure);
-        System.out.println(plaster);
-        System.out.println(tyre);
+        Counter counter = new Counter(10); 
+        System.out.println("Initial value: " + counter.value()); 
+
+        counter.increase(); 
+        System.out.println("After increase: " + counter.value()); 
+
+        counter.increase(5); 
+        System.out.println("After increasing by 5: " + counter.value()); 
+
+        counter.decrease(); 
+        System.out.println("After decrease: " + counter.value()); 
+
+        counter.decrease(3); 
+        System.out.println("After decreasing by 3: " + counter.value()); 
+
+        counter.increase(-2); 
+        System.out.println("After invalid increase: " + counter.value()); 
+
+        counter.decrease(-4); 
+        System.out.println("After invalid decrease: " + counter.value()); 
     }
-    
+
 }
