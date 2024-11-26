@@ -7,28 +7,18 @@ import java.util.*;
 
 public class App 
 {      
-    public static void main(String[] args) throws Exception{
-        Scanner scanner = new Scanner(System.in);
-        BufferedReader reader = Utils.getReader("person.csv");
-        ArrayList<Person> persons = new ArrayList<>();
-        String line;
-        reader.readLine(); 
+    public static void main(String[] args) {
+        Timer timer = new Timer();
 
-        while ((line = reader.readLine()) != null) {
-            line = scanner.nextLine();
-            String[] parts = line.split(",");
-            String name = parts[0].trim();
-            int age = Integer.valueOf(parts[1].trim());
-            Integer height = Integer.valueOf(parts[2].trim());
-            Integer weight = Integer.valueOf(parts[3].trim());
-            Person pers1 = new Person(name, age, height, weight);
-            persons.add(pers1);
-        }
+        while (true) {
+            System.out.println(timer);
+            timer.advance();
 
-        for (Person person : persons) {
-            System.out.println(person);
+            try {
+                Thread.sleep(10); // Sleep for 10 milliseconds to mimic real-time progress
+            } catch (Exception e) {
+                System.err.println("Timer interrupted");
+            }
         }
-        
-        
-}
+    }
 }
