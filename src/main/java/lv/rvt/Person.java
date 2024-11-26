@@ -6,6 +6,19 @@ public class Person {
     private String group;
     private int weight;
     private int height;
+    public Person(String name) {
+        this.name = name;
+        this.age = 0;
+        this.weight = 0;
+        this.height = 0;
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.weight = 0;
+        this.height = 0;
+    }
 
     public Person(String initialName, Integer initialage, Integer initialweight, Integer initialheight ) {
         this.age = initialage;
@@ -22,7 +35,7 @@ public class Person {
         this.weight = newWeight;
     }
     public String toString() {
-        return this.name + ", age " + this.age + " years, my body mass index is " + bodyMassIndex();
+        return this.name + ", age " + this.age;
     }
     public double bodyMassIndex() {
         double heigthPerHundred = this.height / 100.0;
