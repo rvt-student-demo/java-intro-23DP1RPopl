@@ -7,11 +7,15 @@ import java.util.*;
 
 public class App 
 {      
+
     public static void main(String[] args) {
-        Person paul = new Person("Paul", 24);
-        Person ada = new Person("Ada");
+        Product tapeMeasure = new Product("Tape measure");
+        Product plaster = new Product("Plaster", "home improvement section");
+        Product tyre = new Product("Tyre", 5);
     
-        System.out.println(paul);
-        System.out.println(ada);
+        System.out.println(tapeMeasure);
+        System.out.println(plaster);
+        System.out.println(tyre);
     }
+    
 }
