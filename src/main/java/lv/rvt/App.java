@@ -8,27 +8,28 @@ import java.util.*;
 public class App 
 {      
 
-    public static void main(String[] args) {
-        Counter counter = new Counter(10); 
-        System.out.println("Initial value: " + counter.value()); 
+    public static void main(String[] args) throws Exception {
+        
+        BufferedReader reader = Helper.getReader("person.csv");
 
-        counter.increase(); 
-        System.out.println("After increase: " + counter.value()); 
+        String line;
+        reader.readLine();
 
-        counter.increase(5); 
-        System.out.println("After increasing by 5: " + counter.value()); 
+        int ageSum = 0;
+        int ageCount = 0;
+  
 
-        counter.decrease(); 
-        System.out.println("After decrease: " + counter.value()); 
+        while ((line = reader.readLine()) != null) {
 
-        counter.decrease(3); 
-        System.out.println("After decreasing by 3: " + counter.value()); 
+            String[] parts = line.split(", ");
 
-        counter.increase(-2); 
-        System.out.println("After invalid increase: " + counter.value()); 
+            System.out.println("Name: "+ parts[0] + ", age: "+ parts[1]);
 
-        counter.decrease(-4); 
-        System.out.println("After invalid decrease: " + counter.value()); 
+            ageSum += Integer.valueOf(parts[1]);
+            ageCount++;
+            
+        }
+        System.out.println(1.0* ageSum / ageCount);
     }
 
 }
