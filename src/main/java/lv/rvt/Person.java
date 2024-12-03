@@ -70,5 +70,8 @@ public class Person {
     public int getAge() {
         return this.age;
     }
+    public String toCsvRow() {
+        return this.name + ", " + this.age + ", " + this.weight + ", " + this.height; 
+    }
 }
 
