@@ -20,7 +20,7 @@ public class Person {
         this.height = 0;
     }
 
-    public Person(String initialName, Integer initialage, double initialweight, double initialheight ) {
+    public Person(String initialName, Integer initialage, double initialheight, double initialweight ) {
         this.age = initialage;
         this.weight = initialweight;
         this.height = initialheight;
@@ -51,6 +51,9 @@ public class Person {
         if (this.age < 30) {
             this.age = this.age + 1;
         }
+    }
+    public void grow() {
+        this.weight = this.weight + 1;
     }
     public int returnAge() {
         return this.age;
