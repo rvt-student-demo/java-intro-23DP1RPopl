@@ -34,4 +34,15 @@ public class PaymentCard {
         }
 
     }
+    public double balance() {
+        return this.balance;
+    }
+    public boolean takeMoney(double amount) {
+        if (this.balance >= amount) { 
+            this.balance -= amount;    
+            return true;               
+        } else {
+            return false;          
+        }
+    }
 }

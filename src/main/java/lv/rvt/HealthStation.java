@@ -9,7 +9,7 @@ public class HealthStation {
         return this.healph;
     }
     public void feed(Person person){
-        healph = (int) Math.round(person.getWeight()); 
+        this.healph = (int) Math.round(person.getWeight()); 
         person.setWeight(healph + 1);
     }   
     public int weighings(){
