@@ -42,7 +42,7 @@ public class Person {
     }
     public double bodyMassIndex() {
         double heigthPerHundred = this.height / 100.0;
-        return this.weight / (heigthPerHundred * heigthPerHundred);
+        return this.weight / (heigthPerHundred * heigthPerHund  red);
     }
     public void printPerson() {
         System.out.println(this.name + ", age " + this.age + " years");

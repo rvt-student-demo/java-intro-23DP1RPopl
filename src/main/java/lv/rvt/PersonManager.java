@@ -21,7 +21,7 @@ public class PersonManager {
             persons.add(person1);
         }
 
-        return persons;
+        return persons; 
     }
     public static void addPerson(Person person) throws Exception {
         BufferedWriter writer = Helper.getWriter("person.csv", StandardOpenOption.APPEND);
@@ -29,4 +29,5 @@ public class PersonManager {
         writer.newLine();
         writer.close();
     }
+
 }
