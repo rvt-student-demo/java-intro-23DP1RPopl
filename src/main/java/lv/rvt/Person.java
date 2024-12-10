@@ -4,8 +4,8 @@ public class Person {
     private String name;
     private int age;
     private String group;
-    private int weight;
-    private int height;
+    private double weight;
+    private double height;
     public Person(String name) {
         this.name = name;
         this.age = 0;
@@ -20,7 +20,7 @@ public class Person {
         this.height = 0;
     }
 
-    public Person(String initialName, Integer initialage, Integer initialweight, Integer initialheight ) {
+    public Person(String initialName, Integer initialage, double initialweight, double initialheight ) {
         this.age = initialage;
         this.weight = initialweight;
         this.height = initialheight;
@@ -35,7 +35,10 @@ public class Person {
         this.weight = newWeight;
     }
     public String toString() {
-        return this.name + ", age " + this.age;
+        return String.format("Name: %s, age: %d, weight: %.2f, height %.2f", this.name, this.age, this.weight, this.height);
+    }
+    public String toCsvRow() {
+        return String.format("%s, %d, %.2f, %.2f", this.name, this.age, this.weight, this.height);
     }
     public double bodyMassIndex() {
         double heigthPerHundred = this.height / 100.0;
@@ -70,8 +73,6 @@ public class Person {
     public int getAge() {
         return this.age;
     }
-    public String toCsvRow() {
-        return this.name + ", " + this.age + ", " + this.weight + ", " + this.height; 
-    }
+   
 }
 
