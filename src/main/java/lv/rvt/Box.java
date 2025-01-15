@@ -43,16 +43,16 @@ public class Box {
     public double getLength() {
         return length;
     }
-    public double faceArea() {
-        return length * height;
+    private double faceArea() {
+        return this.length * this.height;
     }
-    
-    public double topArea() {
-       return length * width;
+
+    private double topArea() {
+        return this.length * this.width;
     }
-    
-    public double sideArea() {
-        return width * height;
+
+    private double sideArea() {
+        return this.width * this.height;
     }
     
     public double area()
