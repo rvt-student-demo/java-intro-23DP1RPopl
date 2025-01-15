@@ -18,6 +18,30 @@ public class Box {
         this.width = oldBox.width;
         this.height = oldBox.height;
         this.length = oldBox.length;
+
+    }
+    public Box smallerBox(Box oldBox) {
+        return new Box(0.75 * oldBox.getWidth(), 0.75 * oldBox.getHeight(), 0.75 * oldBox.getLength());
+    }
+
+    public Box biggerBox(Box oldBox) {
+        return new Box(1.25 * oldBox.getWidth(), 1.25 * oldBox.getHeight(), 1.25 * oldBox.getLength());
+    }
+    public boolean nests(Box outsideBox) {
+        return this.width < outsideBox.getWidth() &&
+               this.height < outsideBox.getHeight() &&
+               this.length < outsideBox.getLength();
+    }
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getLength() {
+        return length;
     }
     public double length() {
         return length;
@@ -48,6 +72,6 @@ public class Box {
     }
     public double volume() {
         return length * width * height;
-    }
+    }   
 
 }
