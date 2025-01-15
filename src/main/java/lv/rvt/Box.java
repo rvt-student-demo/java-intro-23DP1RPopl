@@ -43,17 +43,6 @@ public class Box {
     public double getLength() {
         return length;
     }
-    public double length() {
-        return length;
-    }
-
-    public double width() {
-        return width;
-    }
-
-    public double height() {
-        return height;
-    }
     public double faceArea() {
         return length * height;
     }
