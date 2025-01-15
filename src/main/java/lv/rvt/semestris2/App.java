@@ -1,4 +1,4 @@
-package lv.rvt;
+package lv.rvt.semestris2;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

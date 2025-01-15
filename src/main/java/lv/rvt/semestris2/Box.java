@@ -1,4 +1,4 @@
-package lv.rvt;
+package lv.rvt.semestris2;
 
 public class Box {
     private double width;
