@@ -1,4 +1,4 @@
-package lv.rvt;
+package lv.rvt.semestris2;
 
 public class Person {
     private String name;
@@ -6,6 +6,7 @@ public class Person {
     private String group;
     private double weight;
     private double height;
+    private String Adress;
     public Person(String name) {
         this.name = name;
         this.age = 0;
@@ -16,6 +17,13 @@ public class Person {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+        this.weight = 0;
+        this.height = 0;
+    }
+    public Person(String name, String Adress) {
+        this.name = name;
+        this.Adress = Adress;
+        this.age = 0;
         this.weight = 0;
         this.height = 0;
     }
@@ -35,7 +43,7 @@ public class Person {
         this.weight = newWeight;
     }
     public String toString() {
-        return String.format("Name: %s, age: %d, weight: %.2f, height %.2f", this.name, this.age, this.weight, this.height);
+        return String.format("Name: %s \nAdress: %s", this.name, this.Adress);
     }
     public String toCsvRow() {
         return String.format("%s, %d, %.2f, %.2f", this.name, this.age, this.weight, this.height);

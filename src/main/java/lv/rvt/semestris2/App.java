@@ -10,8 +10,9 @@ import lv.rvt.semestris2.Engine;
 
 public class App {
     public static void main(String[] args) {
-        Engine engine = new Engine("combustion", "hz", "volkswagen", "VW GOLF 1L 86-91");
-        System.out.println(engine.getEngineType());
-        System.out.println(engine.getManufacturer());
+        Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+        System.out.println(ollie);
+        ollie.study();
+        System.out.println(ollie);
     }   
 }
