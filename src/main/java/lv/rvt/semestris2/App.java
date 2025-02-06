@@ -9,10 +9,17 @@ import lv.rvt.semestris2.Engine;
 
 
 public class App {
+    public static void printPersons(ArrayList<Person> persons) {
+        for (Person person : persons) {
+            System.out.println(person);
+        }
+    }
+
     public static void main(String[] args) {
-        Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
-        System.out.println(ollie);
-        ollie.study();
-        System.out.println(ollie);
-    }   
+        ArrayList<Person> persons = new ArrayList<>();
+        persons.add(new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200));
+        persons.add(new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028"));
+
+        printPersons(persons);
+    } 
 }
