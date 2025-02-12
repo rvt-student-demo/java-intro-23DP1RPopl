@@ -10,9 +10,19 @@ import lv.rvt.semestris2.Engine;
 
 public class App {
     public static void main(String[] args) {
-        ProductWarehouseWithHistory juice = new ProductWarehouseWithHistory("Juice", 1000.0, 1000.0);
-        juice.takeFromWarehouse(11.3);
-        juice.addToWarehouse(1.0);
-        juice.printAnalysis();
+        
+        ArrayList<String> pages = new ArrayList<>();
+        pages.add("Split your method into short, readable entities.");
+        pages.add("Separate the user-interface logic from the application logic.");
+        pages.add("Always program a small part initially that solves a part of the problem.");
+        pages.add("Practice makes the master. Try different out things for yourself and work on your own projects.");
+
+        Ebook book = new Ebook("Tips for programming.", pages);
+
+        int page = 0;
+        while (page < book.pages()) {
+            System.out.println(book.read());
+            page = page + 1;
+}
     }
 }
