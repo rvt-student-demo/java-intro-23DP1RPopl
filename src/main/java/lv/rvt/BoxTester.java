@@ -1,4 +1,6 @@
-package lv.rvt.semestris2;
+package lv.rvt;
+
+import lv.rvt.Box;
 
 public class BoxTester {
     public static void main(String[] args) {

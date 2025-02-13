@@ -10,19 +10,16 @@ import lv.rvt.semestris2.Engine;
 
 public class App {
     public static void main(String[] args) {
-        
-        ArrayList<String> pages = new ArrayList<>();
-        pages.add("Split your method into short, readable entities.");
-        pages.add("Separate the user-interface logic from the application logic.");
-        pages.add("Always program a small part initially that solves a part of the problem.");
-        pages.add("Practice makes the master. Try different out things for yourself and work on your own projects.");
-
-        Ebook book = new Ebook("Tips for programming.", pages);
-
-        int page = 0;
-        while (page < book.pages()) {
-            System.out.println(book.read());
-            page = page + 1;
-}
+        Box box = new Box(10);
+    
+        box.add(new Book("Fyodor Dostoevsky", "Crime and Punishment", 2)) ;
+        box.add(new Book("Robert Martin", "Clean Code", 1));
+        box.add(new Book("Kent Beck", "Test Driven Development", 0.7));
+    
+        box.add(new CD("Pink Floyd", "Dark Side of the Moon", 1973));
+        box.add(new CD("Wigwam", "Nuclear Nightclub", 1975));
+        box.add(new CD("Rendezvous Park", "Closer to Being Here", 2012));
+    
+        System.out.println(box);
     }
 }
