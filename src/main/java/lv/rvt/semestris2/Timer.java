@@ -1,4 +1,6 @@
-package lv.rvt;
+package lv.rvt.semestris2;
+
+import lv.rvt.ClockHand;
 
 public class Timer {
     private ClockHand hundredths;
