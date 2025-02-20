@@ -2,24 +2,18 @@ package lv.rvt.semestris2;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.Console;
 import java.nio.file.StandardOpenOption;
 import java.util.*;
-
+import lv.rvt.semestris2.ConsoleColors;
 import lv.rvt.semestris2.Engine;
 
 
 public class App {
     public static void main(String[] args) {
-        Box box = new Box(10);
-    
-        box.add(new Book("Fyodor Dostoevsky", "Crime and Punishment", 2)) ;
-        box.add(new Book("Robert Martin", "Clean Code", 1));
-        box.add(new Book("Kent Beck", "Test Driven Development", 0.7));
-    
-        box.add(new CD("Pink Floyd", "Dark Side of the Moon", 1973));
-        box.add(new CD("Wigwam", "Nuclear Nightclub", 1975));
-        box.add(new CD("Rendezvous Park", "Closer to Being Here", 2012));
-    
-        System.out.println(box);
+        for(int i = 0; i < 10; i++){
+            System.out.println(ConsoleColors.GREEN_BACKGROUND);
+        }
+    System.out.println(ConsoleColors.RESET);
     }
 }
